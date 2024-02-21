@@ -47,7 +47,7 @@ class JwtService
      */
     public function decodeJsonWebToken($encodedJWT): object
     {
-        $headers = json_decode(json_encode($this->algorithms[0]), true);
+        $headers = json_decode(json_encode($this->algorithms), true);
         return JWT::decode($encodedJWT, $this->keyProvider->getPublicKey(), $headers);
     }
 
