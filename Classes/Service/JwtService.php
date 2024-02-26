@@ -3,6 +3,7 @@
 namespace RFY\JWT\Service;
 
 use Firebase\JWT\JWT;
+use Firebase\JWT\Key;
 use Neos\Flow\Annotations as Flow;
 use Neos\Flow\Mvc\ActionRequest;
 use RFY\JWT\Security\Authentication\Token\JwtToken;
